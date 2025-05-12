@@ -404,7 +404,7 @@ if st.session_state.run_main:
                     for entry in feed.entries[:5]:
                         st.subheader(entry.title)
                         st.write(entry.published)
-                        st.markdown(f"[Leer más]({entry.link})")
+                        st.markdown(f"[More Info]({entry.link})")
                         st.markdown("---")
 
         else:
