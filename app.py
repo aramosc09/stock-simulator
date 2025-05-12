@@ -241,7 +241,7 @@ if st.session_state.run_main:
                             with st.expander("Advanced metrics"):
                                 st.write(f"**Max Drawdown:** {max_drawdown * 100:.2f}%")
                                 st.write(f"**Sharpe Ratio:** {sharpe_ratio:.2f}")
-                                st.write(f"**Profit Factor:** {profit_factor:.2f}" if profit_factor != float('inf') else "N/A (no losses)")
+                                st.write(f"**Profit Factor:** {profit_factor:.2f}" if profit_factor != float('inf') else "**Profit Factor:** N/A (no losses)")
                                 st.write(f"**Expectancy:** {expectancy:.2f}")
 
                         # Portfolio Evolution Graph
