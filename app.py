@@ -169,7 +169,7 @@ if st.session_state.run_main:
                         col4, col5, col6 = st.columns(3)
                         col4.metric("Rentability", f"{profit_pct:.2f}%")
                         col5.metric("Adjusted rentability", f"{adjusted_return:.2f}%")
-                        col6.metric("Est Inflation", f"{estimated_inflation_pct:.2f}%")
+                        col6.metric("Est. Inflation", f"{estimated_inflation_pct:.2f}%")
 
                         #STATS SAVING
                         total_trades = 0
@@ -241,7 +241,7 @@ if st.session_state.run_main:
                             with st.expander("Advanced metrics"):
                                 st.write(f"**Max Drawdown:** {max_drawdown * 100:.2f}%")
                                 st.write(f"**Sharpe Ratio:** {sharpe_ratio:.2f}")
-                                st.write(f"**Profit Factor:** {profit_factor:.2f}")
+                                st.write(f"**Profit Factor:** {profit_factor:.2f}" if profit_factor != float('inf') else "N/A (no losses)")
                                 st.write(f"**Expectancy:** {expectancy:.2f}")
 
                         # Portfolio Evolution Graph
